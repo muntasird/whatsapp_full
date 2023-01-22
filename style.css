@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  body {
+    font-family: arial;
+    background-color: #fcf5eb;
+  }
+  
+  /* common css */
+  .container {
+    width: 1080px;
+    margin: auto;
+  }
+  .row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .download_button {
+    background-color: #25d366;
+    color: #1c1e21;
+    padding: 16px 28px;
+    font-size: 16px;
+    border: 1px solid #1c1e21;
+    border-radius: 35px;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+  }
+  .download_button::after {
+    content: "";
+    position: absolute;
+    background-color: #111 !important;
+    width: 100% !important;
+    height: 80px !important;
+    border-radius: 50%;
+    top: 100%;
+    bottom: auto;
+    z-index: -1;
+    left: 0;
+    transition: 0.5s !important;
+    /* transform: scale(3); */
+  }
+  .download_button:hover {
+    color: white;
+  }
+  .download_button:hover::after {
+    top: 0;
+    transform: scale(1.5);
+  }
+  .align-center {
+    align-items: center;
+  }
+  
+  .links {
+    color: #111;
+  }
+  .links span {
+    margin-left: 5px;
+  }
+  .links:hover {
+    color: #25d366;
+  }
+  .links .link_text {
+    position: relative;
+  }
+  .links .link_text::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #25d366;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+.prof{
+  width: 100%;
+}
+.prof img{
+  width: 100%;
+}
+.prof p{
+  line-height: 48px;
+  font-size: 48px;
+  margin: 56px 0px; 
+  width: calc(100% - 201px);
+  text-align: center;
+  height: 192px;
+  letter-spacing: -1.44px;
+}
+  
+  /* *common css end* */
+  
+  /* * NAVBAR STARTS HERE */
+  nav {
+    padding: 30px 50px 40px 50px;
+  }
+  nav .logo,
+  nav .menu,
+  nav .download_button_grp {
+    width: 33.33%;
+  }
+  nav .logo img {
+    width: 120px;
+  }
+  
+  nav .download_button_grp ul li,
+  nav .menu ul li {
+   display: inline-block;
+  }
+  
+  nav .download_button_grp ul li a,
+  nav .menu ul li a {
+    color: #1c1e21;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 10px;
+    position: relative;
+    display: block;
+  }
+  
+  nav .download_button_grp ul li a::after,
+  nav .menu ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #25d366;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.3s;
+  }
+  nav .download_button_grp ul li:hover a::after,
+  nav .menu ul li:hover a::after {
+    width: 100%;
+  }
+  
+  nav .download_button_grp ul {
+    text-align: right;
+  }
+  
+  nav .download_button_grp ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  
+  /* *Banner starts here* */
+  #banner {
+    background-image: url(./image/banner.png);
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% - 100px);
+    margin: auto;
+    border-radius: 35px;
+    position: relative;
+  }
+  #banner .row {
+    height: 750px;
+  }
+  
+  .banner_cnt {
+    width: 30%;
+    color: white;
+  }
+  
+  .banner_cnt h2 {
+    font-size: 70px;
+  }
+  .banner_cnt p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .banner_cnt .download_button::after {
+    background-color: #fff !important;
+  }
+  .banner_cnt .download_button {
+    border: none;
+  }
+  
+  .banner_cnt .download_button:hover {
+    color: #111;
+  }
+  .banner_cnt .download_button span {
+    margin-left: 10px;
+  }
+  .banner_float_images {
+    position: absolute;
+  }
+  
+  .cupImage {
+    top: 200px;
+    right: 300px;
+  }
+  .vioce {
+    top: 300px;
+    right: 350px;
+  }
+  .voicephoto{
+    top: 400px;
+  
+    right: 350px;
+  }
+  
+  /* CONFERENCE STARTS HERE */
+  #conference {
+    padding: 60px 0;
+  }
+  #conference .conference_img,
+  #conference .conference_text {
+    width: 50%;
+  }
+  #conference .conference_img {
+    text-align: right;
+  }
+  
+  #conference .conference_text h2 {
+    font-size: 70px;
+    font-weight: 400;
+  }
+  
+  #conference .conference_text p {
+    font-size: 20px;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  /* CONFERENCE STAR**/
+  #ank{
+    background-color: #1c1e21;
+    height: 846px;    
+    width: 100%;
+  }
+  #ank .anika, 
+  #ank .ankia{
+    color: #fcf5eb;
+    width: 50%;
+  }
+  #ank .ankia{
+    padding: 0px 96px 0px 111px;
+    height: 289px;
+  }
+   #ank .ankia h2{
+   font-size: 60px;
+   text-align: left;
+   line-height: 60px;
+   letter-spacing: -1.8px;
+   font-weight: 300;
+   height: 120px;
+  }
+  #ank .ankia span{
+    color: #25d366 !important;
+  }
+   #ank .ankia p{
+    margin: 449px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: normal;
+    text-align: left;
+    margin: 15px 0px 34px 0px;
+  }
+  #ank .anika .link_text{
+    color: #fcf5eb !important;
+  }
+  #chat{
+    background-color: #fcf5eb;
+    width: 100%;
+    height: 846px;
+  }
+  #chat .chat-ctn,
+  #chat .chat-img{
+    width: 50%;
+    color: #1c1e21;
+  }
+  
+    
+  
+  #chat .chat-ctn h2{
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    letter-spacing: -1.8px;
+  }
+  #chat .chat-ctn p{
+    width: 449px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    padding: 18px 0px 18px 0px ;
+  }
+  #chat .chat-img{
+    text-align: center;
+  }
+  #lady{
+    background-color: #fcf5eb;
+    width: 100%;
+    height: 846px;
+  }
+  #lady .lady-img,
+  #lady .lady-text{
+    width: 50%;
+  }
+  #lady .lady-text h2{
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -.18px;
+    text-align: left;
+    margin: 18px 0px;
+    font-weight: 400;
+  }
+  #lady .lady-text p{
+    margin: 449px;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -.18px;
+    margin: 18px 0px;
+  }
+  #shop{
+    background-color: #fcf5eb;
+    height: 846px;
+    width: 100%;
+  }
+  #shop .shop-text
+  #shop .shop-img{
+    width: 50%;
+  }
+  #shop .shop-text h2 {
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: -.18px;
+    line-height: 60px;
+    text-align: left;
+
+  }
+  #shop .shop-text p{
+    font-size: 18px;
+    width: 449px;
+    line-height: 25px;
+    letter-spacing: -0.18px;
+    text-align: left;
+    margin: 18px 0px;
+  }
+  #shop .shop-img{
+    flex: end;
+    margin: 107px;
+    text-align: center;
+  }
+  #last{
+    background-color: #111b21;
+    height: 350px;
+    width: 100%;
+  }
+  #last .lg .logo{
+    width: 200px;
+  }
+  #last .lg{
+    margin: 50px 0 ;
+    width: 20%;
+    margin-right: 50px;
+  }
+  #last .help ul li,
+  #last .use ul li,
+  #last .what-are ul li,
+  #last .what-do ul li{
+    margin: 18px;
+    color: #fcf5eb;
+  }
+  #last .help ul li a,
+  #last .use ul li a,
+  #last .what-are ul li a,
+  #last .what-do ul li a{
+     font-size: 18px;
+     line-height: 25px;
+     letter-spacing: -.18px;
+     text-align: left;
+     color: #fcf5eb;    
+  }
+  #last .help ul li a:hover,
+  #last .use ul li a:hover,
+  #last .what-are ul li a:hover,
+  #last .what-do ul li a:hover{
+    text-decoration: underline;
+}
+  #last .what-do{
+    width: 20%;
+    margin-left: 50px;
+  }
+  
+  #last .what-are{
+    width: 20%;
+  }
+  #last .help{
+    align-items: flex-start !important;
+    margin-bottom: 40px;
+    margin-left: 40px;
+  }
+  #last .lg ul li:hover .download_button{
+    color: #1c1e21;
+  }
+  #last .lg .download_button::after{
+    background-color: #fcf5eb !important;
+  }
+  #icons{
+    height: 250px;
+    width: 100%;
+    background-color: #111b21;
+  }
+  #last span hr{
+    width: 1050px;
+    background-color: #25d366;
+    margin: auto;
+
+  }
+  #icons .y-2023,
+  #icons .media,
+  #icons .vasha{
+    width: 33.33%;
+    color: #ffffff;
+  }
+  #icons .y-2023 ul li ,
+  #icons .media ul li{
+    display: inline-block;
+    padding: 10px;
+  }
+  #icons .y-2023 ul li a, 
+  #icons .media  ul li a{
+    display: block;
+    color: #fcf5eb;
+  }
+  #icons .media ul li  .download_button{
+    background-color: #1c1e21 !important;
+    border-radius: 50% !important;
+    color: #ffffff !important;
+    padding: 16px 18px !important;
+    border: solid #fcf5eb ;
+    font-size: 20px ;
+    width: 63px !important;
+    height:61px !important;
+    line-height: 26.08px ;
+    align-items: center;
+    text-align: center;
+  }
+  #icons .media ul .download_button:hover{
+    color: #1c1e21;
+  }  
+  #icons .media ul li .download_button::after{
+    background-color: #25d366 !important;
+  }
+
+  #icons .vasha{
+    text-align: center;
+  }
+  
+  
+  #icons .vasha select {
+    padding: 16px 28px;
+    font-size: 16px;
+    border-radius: 50px;
+    width: 220px;
+    height: 53px;
+    background-color: #111b21;
+    border: #ffffff solid 2px;
+    color: #ffffff;
+  }
